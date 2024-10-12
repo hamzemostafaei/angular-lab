@@ -342,6 +342,7 @@ __metadata:
     jest: ^29.7.0
     jest-environment-jsdom: ^29.7.0
     jest-preset-angular: ~14.1.0
+    ng-zorro-antd: ^18.1.1
     nx: 20.0.0
     prettier: ^2.6.2
     rxjs: ~7.8.0
@@ -422,6 +423,23 @@ __metadata:
     tailwindcss:
       optional: true
   checksum: 6a73acaa682f00ed4367edef3df7bc312b8b40dc6755f7e671658e6b3d1899a6804b7e7a67d2b87d8dfb217395d774210ad6bab996d97805d9d6d0784ca95a16
+  languageName: node
+  linkType: hard
+
+"@angular/cdk@npm:^18.0.0":
+  version: 18.2.8
+  resolution: "@angular/cdk@npm:18.2.8"
+  dependencies:
+    parse5: ^7.1.2
+    tslib: ^2.3.0
+  peerDependencies:
+    "@angular/common": ^18.0.0 || ^19.0.0
+    "@angular/core": ^18.0.0 || ^19.0.0
+    rxjs: ^6.5.3 || ^7.4.0
+  dependenciesMeta:
+    parse5:
+      optional: true
+  checksum: 6d594ddaad288039aa30e3175c06e0eef14384423f8f35fea28c4c181d2a2fc94fe5c342c9e40a038bc73e237ccf97d797b5d26a377f7ac855a5c9f3faef0644
   languageName: node
   linkType: hard
 
@@ -580,6 +598,30 @@ __metadata:
     "@angular/platform-browser": 18.2.8
     rxjs: ^6.5.3 || ^7.4.0
   checksum: 1f910fe4bfec1f1ebd194a944f61a546be6da00c8935dca1c0ab5fb07e3d12a13a21196794c7c56ad5e2fbc02c5a4bd0e122726f83ca7e6a63d7b2dce157a792
+  languageName: node
+  linkType: hard
+
+"@ant-design/colors@npm:^7.0.0":
+  version: 7.1.0
+  resolution: "@ant-design/colors@npm:7.1.0"
+  dependencies:
+    "@ctrl/tinycolor": ^3.6.1
+  checksum: 6488b4159cea52be8a904caf541064e9f0e267c1df74ed687abd9364e6cfeb0353c64ee078878069f48aa6c381feca2af17612efe0529517c0260f989472b7ae
+  languageName: node
+  linkType: hard
+
+"@ant-design/icons-angular@npm:^18.0.0":
+  version: 18.0.0
+  resolution: "@ant-design/icons-angular@npm:18.0.0"
+  dependencies:
+    "@ant-design/colors": ^7.0.0
+    tslib: ^2.0.0
+  peerDependencies:
+    "@angular/common": ^18.0.0
+    "@angular/core": ^18.0.0
+    "@angular/platform-browser": ^18.0.0
+    rxjs: ^6.4.0 || ^7.4.0
+  checksum: c032d53e50b550724978d3e051fd824c366e58e4a0eea57036251e9e210f89f4d32b4d954bbee31155f3bf758f18a4e59108aa73859c62ce571a2e700fc7a0ef
   languageName: node
   linkType: hard
 
@@ -2120,7 +2162,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.22.6, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.4":
+"@babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.22.6, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.4":
   version: 7.25.7
   resolution: "@babel/runtime@npm:7.25.7"
   dependencies:
@@ -2186,6 +2228,13 @@ __metadata:
   dependencies:
     "@jridgewell/trace-mapping": 0.3.9
   checksum: 5718f267085ed8edb3e7ef210137241775e607ee18b77d95aa5bd7514f47f5019aa2d82d96b3bf342ef7aa890a346fa1044532ff7cc3009e7d24fce3ce6200fa
+  languageName: node
+  linkType: hard
+
+"@ctrl/tinycolor@npm:^3.6.1":
+  version: 3.6.1
+  resolution: "@ctrl/tinycolor@npm:3.6.1"
+  checksum: cefec6fcaaa3eb8ddf193f981e097dccf63b97b93b1e861cb18c645654824c831a568f444996e15ee509f255658ed82fba11c5365494a6e25b9b12ac454099e0
   languageName: node
   linkType: hard
 
@@ -7842,6 +7891,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"date-fns@npm:^2.16.1":
+  version: 2.30.0
+  resolution: "date-fns@npm:2.30.0"
+  dependencies:
+    "@babel/runtime": ^7.21.0
+  checksum: f7be01523282e9bb06c0cd2693d34f245247a29098527d4420628966a2d9aad154bd0e90a6b1cf66d37adcb769cd108cf8a7bd49d76db0fb119af5cdd13644f4
+  languageName: node
+  linkType: hard
+
 "date-format@npm:^4.0.14":
   version: 4.0.14
   resolution: "date-format@npm:4.0.14"
@@ -12437,6 +12495,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ng-zorro-antd@npm:^18.1.1":
+  version: 18.1.1
+  resolution: "ng-zorro-antd@npm:18.1.1"
+  dependencies:
+    "@angular/cdk": ^18.0.0
+    "@ant-design/icons-angular": ^18.0.0
+    date-fns: ^2.16.1
+    tslib: ^2.3.0
+  peerDependencies:
+    "@angular/animations": ^18.0.0
+    "@angular/common": ^18.0.0
+    "@angular/core": ^18.0.0
+    "@angular/forms": ^18.0.0
+    "@angular/platform-browser": ^18.0.0
+    "@angular/router": ^18.0.0
+  checksum: 61d8bdfda3ed4cb08b15e971107e0dbe8937005f0996d2c9fbddc28b096007dbe35d3a524cf454a50d1d0d12e40109faf8fc263105d4a2d1763b40592a65b34d
+  languageName: node
+  linkType: hard
+
 "nice-napi@npm:^1.0.2":
   version: 1.0.2
   resolution: "nice-napi@npm:1.0.2"
@@ -13135,7 +13212,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parse5@npm:^7.0.0, parse5@npm:^7.1.1":
+"parse5@npm:^7.0.0, parse5@npm:^7.1.1, parse5@npm:^7.1.2":
   version: 7.2.0
   resolution: "parse5@npm:7.2.0"
   dependencies:
