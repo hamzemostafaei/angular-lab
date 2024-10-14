@@ -1,1 +1,18 @@
-<lib-money></lib-money>
+<nz-card>
+  <b>This is the original input number, which losts the format</b>
+  <div style="margin-bottom: 25px">
+    <nz-input-number
+      [(ngModel)]="value"
+      [nzMin]="1"
+      [nzMax]="999999999999.99"
+      [nzPrecision]="2"
+      nzPrecisionMode="toFixed"
+      [nzStep]="1"
+      [nzFormatter]="formatter"
+      [nzParser]="parser"
+      [nzInputMode]="'decimal'"
+      style="width: 50%"
+      (ngModelChange)="onValueChange($event)"
+    ></nz-input-number>
+  </div>
+</nz-card>

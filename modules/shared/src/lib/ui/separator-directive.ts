@@ -1,7 +1,7 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
-  selector: 'input[separator]',
+  selector: 'inputElement',
   standalone: true
 })
 export class SeparatorDirective {
@@ -9,7 +9,7 @@ export class SeparatorDirective {
   constructor(private _inputEl: ElementRef) {
   }
 
-  @HostListener('input', ['$event'])
+  @HostListener('inputElement', ['$event'])
   onInput(event: any) {
     if (this._inputEl.nativeElement.value === '-') return;
     let commasRemoved = this._inputEl.nativeElement.value.replace(/,/g, '');

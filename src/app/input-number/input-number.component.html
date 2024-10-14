@@ -1,0 +1,18 @@
+<div class="ant-input-number-input-wrap">
+  <input
+    #inputElement
+    autocomplete="off"
+    class="ant-input-number-input"
+    [attr.id]="nzId"
+    [attr.autofocus]="nzAutoFocus ? 'autofocus' : null"
+    [disabled]="nzDisabled"
+    [attr.min]="nzMin"
+    [attr.max]="nzMax"
+    [placeholder]="nzPlaceHolder"
+    [attr.step]="nzStep"
+    [attr.inputmode]="nzInputMode"
+    (keyup)="stop()"
+    [ngModel]="displayValue"
+    (input)="onModelChange($event)"
+  />
+</div>
